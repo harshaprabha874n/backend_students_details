@@ -1,8 +1,9 @@
 const express=require("express");
-const  Router =express.Router();
+const  router =express.Router();
 
-const Student=require("../../db/schema/index.js")
-Router.get("/",(req,res)=>{
-    res.send("students Database");
+const student=require("../../db/schema/studSchema.js")
+router.get("/",async(req,res)=>{
+    const students=await student.find();
+    res.json(students);
 });
 module.exports=Router;

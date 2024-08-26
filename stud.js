@@ -1,8 +1,11 @@
 require ("dotenv").config();
+
 const studRoutes=require("./routes/students/student.js");
-const db=require("./db/schema/index");
+const db=require("./db/index");
+
 const express=require("express");
 const app=new express();
+
 app.use(express.json());
 
 
