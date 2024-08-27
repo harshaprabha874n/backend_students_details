@@ -39,3 +39,66 @@ The server will start on http://localhost:4000.
   *  Query parameters:
       name: Filter by department name (optional)
      <img>
+Add Department
+
+POST /api/departments
+
+Request body:
+
+json
+Copy code
+{
+  "name": "Computer Science"
+}
+Update Department
+
+PUT /api/departments/:id
+
+Request body:
+
+json
+Copy code
+{
+  "name": "Electrical Engineering"
+}
+Delete Department
+
+DELETE /api/departments/:id
+# Students
+ # List Students
+   *GET /api/students
+   Query parameters:
+   name: Filter by student name (optional)
+   registrationNum: Filter by registration number (optional)
+# Add Student
+ POST /api/students
+  * Request body:
+  {
+  "name": "Alice Johnson",
+  "registrationNum": "98765",
+  "department": "60d21b4667d0d8992e610c85"
+  }
+# Update Student
+ PUT /api/students/:id
+  * Request body:
+ {
+  "name": "Alice Johnson",
+  "registrationNum": "98765",
+  "department": "60d21b4667d0d8992e610c85"
+ }
+# Delete Student
+
+* DELETE /api/students/:id
+   Get Students by Department
+   GET /api/students/department/:departmentId
+# Error Handling
+400 Bad Request: Returned when required fields are missing or validation fails.
+404 Not Found: Returned when the requested resource does not exist.
+500 Internal Server Error: Returned for unexpected server errors.
+# Testing with Postman
+* Set Up Postman: Install Postman if you haven't already.
+* Test Endpoints:
+   * Create a new request in Postman.
+   * Set the request type (GET, POST, PUT, DELETE) and URL.
+   * Add required headers (Content-Type: application/json).
+   * For POST and PUT requests, include the JSON body in the "Body" tab.
