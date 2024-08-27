@@ -2,12 +2,40 @@
 # Overview
  This API allows you to manage students and departments, including creating, listing, updating, and deleting both entities. The API is built using Node.js with Express and MongoDB with Mongoose for database management.
 # Features
-List and Search Students: Retrieve a list of students with optional filtering by name and registration number.
-List and Search Departments: Retrieve a list of departments with optional filtering by name.
-Add New Student: Add a new student and map them to a department.
-Add New Department: Create a new department.
-Update Student: Update details of an existing student.
-Update Department: Update details of an existing department.
-Delete Student: Remove a student from the database.
-Delete Department: Remove a department from the database.
-Get Students by Department: Retrieve all students associated with a specific department.
+* List and Search Students: Retrieve a list of students with optional filtering by name and registration number.
+* List and Search Departments: Retrieve a list of departments with optional filtering by name.
+* Add New Student: Add a new student and map them to a department.
+* Add New Department: Create a new department.
+* Update Student: Update details of an existing student.
+* Update Department: Update details of an existing department.
+* Delete Student: Remove a student from the database.
+* Delete Department: Remove a department from the database.
+* Get Students by Department: Retrieve all students associated with a specific department.
+# Prerequisites
+* Node.js
+* MongoDB
+* Postman (for testing the API)
+# Installation
+* Clone the Repository
+git clone <repository-url>
+* Navigate to the Project Directory
+cd path/to/project
+* Install Dependencies
+npm install 
+* Set Up Environment Variables
+Create a .env file in the root directory with the following content:
+* env
+MONGO_URI=mongodb://localhost:27017/studentsdb
+PORT=3000
+Adjust MONGO_URI to match your MongoDB connection string.
+* Start the Server
+npm start
+The server will start on http://localhost:4000.
+# API Endpoints
+## Departments
+
+* List Departments
+  * GET /api/departments
+  *  Query parameters:
+      name: Filter by department name (optional)
+     <img>
