@@ -1,6 +1,6 @@
-const mongooese = require("mongoose");
+const mongoose = require("mongoose");
 
-const movieSchema = new mongooese.Schema({
+const studSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -8,25 +8,15 @@ const movieSchema = new mongooese.Schema({
   registrationNum: {
     type: String,
     required: true,
+    unique:true,
   },
   department:{
-    type: Date,
-    required: true,
-  },
-  phoneNum:{
-    type: String,
-    required: false,
-  },
-  dateOfBirth: {
-    type: Number,
-    required: true,
-  },
-  bloodGroup: {
-    type: String,
-    required: true,
-  },
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Department',
+    required:true,
+  }
 });
 
-const Movie = mongooese.model("Movie", movieSchema);
+const Student= mongoose.model("Student", studSchema);
 
-module.exports = Movie;
+module.exports =Student;
