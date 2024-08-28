@@ -38,27 +38,33 @@ The server will start on http://localhost:4000.
   * GET /api/departments
   *  Query parameters:
       name: Filter by department name (optional)
-     <img>
+     <img src="output/1studget.png">
 # Add Department
  * POST /api/departments
      Request body:
 {
   "name": "Computer Science"
 }
+ <img src="output/1studpost.png">
 # Update Department
 * PUT /api/departments/:id
 Request body:
 {
   "name": "Electrical Engineering"
-}
+ <img src="output/1studput.png">
 # Delete Department
 DELETE /api/departments/:id
+ <img src="output/1studdel.png">
+
+ # Final 
+  <img src="output/final.png">
 # Students
  # List Students
    * GET /api/students
     * Query parameters:
    * name: Filter by student name (optional)
    * registrationNum: Filter by registration number (optional)
+    <img src="output/delget.png">
 # Add Student
  POST /api/students
   * Request body:
@@ -67,6 +73,7 @@ DELETE /api/departments/:id
   "registrationNum": "98765",
   "department": "60d21b4667d0d8992e610c85"
   }
+   <img src="output/delpost.png">
 # Update Student
  PUT /api/students/:id
   * Request body:
@@ -74,12 +81,17 @@ DELETE /api/departments/:id
   "name": "Alice Johnson",
   "registrationNum": "98765",
   "department": "60d21b4667d0d8992e610c85"
- }
+ } 
+  <img src="output/delput.png">
 # Delete Student
 
 * DELETE /api/students/:id
    Get Students by Department
    GET /api/students/department/:departmentId
+   <img src="output/deldel.png">
+
+# final
+ <img src="output/final.png">
 # Error Handling
  *400 Bad Request: Returned when required fields are missing or validation fails.
  *404 Not Found: Returned when the requested resource does not exist.
