@@ -45,16 +45,16 @@ The server will start on http://localhost:4000.
 {
   "name": "Computer Science"
 }
- <img src="output/1studpost.png">
+ <img src="output/2studpost.png">
 # Update Department
 * PUT /api/departments/:id
 Request body:
 {
   "name": "Electrical Engineering"
- <img src="output/1studput.png">
+ <img src="output/3studput.png">
 # Delete Department
 DELETE /api/departments/:id
- <img src="output/1studdel.png">
+ <img src="output/4studdel.png">
 
  # Final 
   <img src="output/final.png">
