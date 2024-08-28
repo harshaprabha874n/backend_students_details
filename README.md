@@ -45,7 +45,7 @@ The server will start on http://localhost:4000.
 {
   "name": "Computer Science"
 }
- <img src="output/2studpost.png">
+<img src="output/2studpost.png">
 # Update Department
 * PUT /api/departments/:id
 Request body:
