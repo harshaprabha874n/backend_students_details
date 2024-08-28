@@ -99,9 +99,9 @@ DELETE /api/departments/:id
  <img src="output/final.png">
  
 # Error Handling
- *400 Bad Request: Returned when required fields are missing or validation fails.
- *404 Not Found: Returned when the requested resource does not exist.
- *500 Internal Server Error: Returned for unexpected server errors.
+ * 400 Bad Request: Returned when required fields are missing or validation fails.
+ * 404 Not Found: Returned when the requested resource does not exist.
+ * 500 Internal Server Error: Returned for unexpected server errors.
 # Testing with Postman
 * Set Up Postman: Install Postman if you haven't already.
 * Test Endpoints:
