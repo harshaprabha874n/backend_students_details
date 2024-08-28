@@ -38,25 +38,25 @@ The server will start on http://localhost:4000.
   * GET /api/departments
   *  Query parameters:
       name: Filter by department name (optional)
-     <img src="output/1studget.png">
+     <img src="output/delget.png">
 # Add Department
  * POST /api/departments
      Request body:
 {
   "name": "Computer Science"
 }
-<img src="output/2studpost.png">
+<img src="output/delpost.png">
 
 # Update Department
 * PUT /api/departments/:id
 Request body:
 {
   "name": "Electrical Engineering"
- <img src="output/3studput.png">
+ <img src="output/delput.png">
  
 # Delete Department
 DELETE /api/departments/:id
- <img src="output/4studdel.png">
+ <img src="output/deldel.png">
 
  # Final 
   <img src="output/final.png">
@@ -67,7 +67,7 @@ DELETE /api/departments/:id
     * Query parameters:
    * name: Filter by student name (optional)
    * registrationNum: Filter by registration number (optional)
-    <img src="output/delget.png">
+    <img src="output/1studget.png">
 # Add Student
  POST /api/students
   * Request body:
@@ -76,7 +76,7 @@ DELETE /api/departments/:id
   "registrationNum": "98765",
   "department": "60d21b4667d0d8992e610c85"
   }
-   <img src="output/delpost.png">
+   <img src="output/2studpost.png">
    
 # Update Student
  PUT /api/students/:id
@@ -86,14 +86,14 @@ DELETE /api/departments/:id
   "registrationNum": "98765",
   "department": "60d21b4667d0d8992e610c85"
  } 
-  <img src="output/delput.png">
+  <img src="output/3studput.png">
   
 # Delete Student
 
 * DELETE /api/students/:id
    Get Students by Department
    GET /api/students/department/:departmentId
-   <img src="output/deldel.png">
+   <img src="output/4studdel.png">
 
 # final
  <img src="output/final.png">
