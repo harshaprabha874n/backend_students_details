@@ -46,12 +46,14 @@ The server will start on http://localhost:4000.
   "name": "Computer Science"
 }
 <img src="output/2studpost.png">
+
 # Update Department
 * PUT /api/departments/:id
 Request body:
 {
   "name": "Electrical Engineering"
  <img src="output/3studput.png">
+ 
 # Delete Department
 DELETE /api/departments/:id
  <img src="output/4studdel.png">
@@ -75,6 +77,7 @@ DELETE /api/departments/:id
   "department": "60d21b4667d0d8992e610c85"
   }
    <img src="output/delpost.png">
+   
 # Update Student
  PUT /api/students/:id
   * Request body:
@@ -84,6 +87,7 @@ DELETE /api/departments/:id
   "department": "60d21b4667d0d8992e610c85"
  } 
   <img src="output/delput.png">
+  
 # Delete Student
 
 * DELETE /api/students/:id
@@ -93,6 +97,7 @@ DELETE /api/departments/:id
 
 # final
  <img src="output/final.png">
+ 
 # Error Handling
  *400 Bad Request: Returned when required fields are missing or validation fails.
  *404 Not Found: Returned when the requested resource does not exist.
