@@ -58,8 +58,9 @@ DELETE /api/departments/:id
 
  # Final 
   <img src="output/final.png">
-# Students
- # List Students
+  
+## Students
+# List Students
    * GET /api/students
     * Query parameters:
    * name: Filter by student name (optional)
