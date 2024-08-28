@@ -34,42 +34,31 @@ The server will start on http://localhost:4000.
 # API Endpoints
 ## Departments
 
-* List Departments
+# List Departments
   * GET /api/departments
   *  Query parameters:
       name: Filter by department name (optional)
      <img>
-Add Department
-
-POST /api/departments
-
-Request body:
-
-json
-Copy code
+# Add Department
+ * POST /api/departments
+     Request body:
 {
   "name": "Computer Science"
 }
-Update Department
-
-PUT /api/departments/:id
-
+# Update Department
+* PUT /api/departments/:id
 Request body:
-
-json
-Copy code
 {
   "name": "Electrical Engineering"
 }
-Delete Department
-
+# Delete Department
 DELETE /api/departments/:id
 # Students
  # List Students
-   *GET /api/students
-   Query parameters:
-   name: Filter by student name (optional)
-   registrationNum: Filter by registration number (optional)
+   * GET /api/students
+    * Query parameters:
+   * name: Filter by student name (optional)
+   * registrationNum: Filter by registration number (optional)
 # Add Student
  POST /api/students
   * Request body:
