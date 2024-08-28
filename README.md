@@ -59,7 +59,7 @@ DELETE /api/departments/:id
  <img src="output/deldel.png">
 
  # Final 
-  <img src="output/final.png">
+  <img src="output/final2.png">
   
 ## Students
 # List Students
